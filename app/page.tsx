@@ -1,6 +1,7 @@
 import {User} from "./useContext/user";
 import UseMemoExample from "./useMemo/page";
 import {Useref} from "./useRef/page";
+import Pagination from "./pagination/page";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
      <User/>
      <UseMemoExample/>
       <Useref/>
+      <Pagination/>
     </div>
   );
 }
