@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from 'react';
 
+type Todo = {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+};
+
 export default function Pagination() {
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -30,7 +37,7 @@ export default function Pagination() {
             <h1>Todo Items ({data.length} total)</h1>
             
             <div className="items-list">
-                {currentItems.map((item: any) => (
+                {currentItems.map((item: Todo) => (
                     <div key={item.id} className="item-card">
                         <h3 className="item-title">
                             {item.id}. {item.title}
