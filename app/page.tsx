@@ -16,10 +16,11 @@ export default function Home() {
         Click Me
       </button>
      <Link href="/1">Go to Dynamic Route with id 1</Link> 
-     {/* <a href="/2">Go to Dynamic Route with id 2</a> */}
-     {/* <a href="/3">Go to Dynamic Route with id 3</a> */}
-     {/* <a href="/4">Go to Dynamic Route with id 4</a> */}
+      <Link href="/2">Go to Dynamic Route with id 2</Link>
+      <Link href="/3">Go to Dynamic Route with id 3</Link>
+      <Link href="/4">Go to Dynamic Route with id 4</Link>
       <Link href="/5">Go to Dynamic Route with id 5</Link>
+
     </div>
   );
 }
